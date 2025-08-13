@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hx리뷰봇</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            border-bottom: 2px solid #7289da;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .command-list {
+            list-style: none;
+            padding: 0;
+        }
+        .command-item {
+            background-color: #40444b;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #7289da;
+        }
+        .command-name {
+            font-weight: bold;
+            color: #7289da;
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .command-description {
+            color: #b9bbbe;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hx리뷰봇</h1>
+        <ul class="command-list">
+            <li class="command-item">
+                <span class="command-name">/채널지정</span>
+                <span class="command-description">후기가 전송될 채널을 지정합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/임베드색상</span>
+                <span class="command-description">모든 임베드의 색상을 설정합니다. (HEX 코드, 예: #FF0000)</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/허용역할</span>
+                <span class="command-description">리뷰 작성을 허용할 역할을 설정합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/후기채널조회</span>
+                <span class="command-description">현재 설정된 후기 채널을 확인합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/전송</span>
+                <span class="command-description">유저에게 후기 작성 DM을 전송합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/리뷰</span>
+                <span class="command-description">리뷰 메시지를 보냅니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/데이터저장</span>
+                <span class="command-description">현재 설정을 JSON 파일에 강제 저장합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/데이터불러오기</span>
+                <span class="command-description">JSON 파일에서 설정을 다시 불러옵니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/데이터상태</span>
+                <span class="command-description">현재 저장된 데이터의 상태를 확인합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/데이터초기화</span>
+                <span class="command-description">현재 서버의 모든 설정을 초기화합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/서버설정</span>
+                <span class="command-description">현재 서버의 모든 설정을 한 번에 확인합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/봇토글</span>
+                <span class="command-description">현재 서버에서 봇의 활성화/비활성화를 전환합니다.</span>
+            </li>
+            <li class="command-item">
+                <span class="command-name">/후기통계</span>
+                <span class="command-description">현재 서버의 후기 통계를 확인합니다.</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
